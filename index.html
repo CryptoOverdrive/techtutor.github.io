@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
- // Import the Botpress WebChat JavaScript file
+
 <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
- 
-// Initialize the Botpress WebChat with the required parameters
 <script>
     window.botpressWebChat.init({
-        // Replace <your-bot-id> and <your-client-id> with your actual bot and client IDs
+        //Setting the Bot and Client ID
         "botId": "6d7e99e8-ece4-47bd-a502-451b000126a9",
         "clientId": "6d7e99e8-ece4-47bd-a502-451b000126a9",
  
-        // Set the URL for the Botpress WebChat JavaScript file and the messaging server
+        // Setting the URL for the Botpress WebChat JavaScript file and the messaging server
         "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
         "messagingUrl": "https://messaging.botpress.cloud",
  
@@ -35,5 +33,13 @@
         ["LIFECYCLE.LOADED"]
     );
 </script>
- 
+     <style>
+        body {
+            background-color: #f5f5f5; /* Set background color */
+            color: #333; /* Set text color */
+            font-family: 'Arial', sans-serif; /* Set font family */
+        }
+        /* Add more styles as needed */
+    </style>
+
 </html>
