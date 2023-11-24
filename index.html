@@ -1,46 +1,36 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>
-<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script>
-    window.botpressWebChat.init({
-        //Setting the Bot and Client ID
-        "botId": "6d7e99e8-ece4-47bd-a502-451b000126a9",
-        "clientId": "6d7e99e8-ece4-47bd-a502-451b000126a9",
- 
-        // Setting the URL for the Botpress WebChat JavaScript file and the messaging server
-        "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
-        "messagingUrl": "https://messaging.botpress.cloud",
- 
-        // Setting the name of the bot that will be displayed in the WebChat interface
-        "botName": "Tech Tutor Educational AI Bot",
- 
-        // Setting the width of the WebChat container and layout to 100% (Full Screen)
-        "containerWidth": "100%25",
-        "layoutWidth": "100%25",
- 
-        // Hide the widget and disable animations
-        "hideWidget": true,
-        "disableAnimations": true,
-    });
- 
-    // Open up the Chatbot by default
-    // This lets user start chatting with the Chatbot without needing to click any buttons or menus.
-    window.botpressWebChat.onEvent(
-        function () {
-            window.botpressWebChat.sendEvent({ type: "show" });
-        },
-        ["LIFECYCLE.LOADED"]
-    );
-</script>
-    
-     <style>
+    <style>
         body {
-            background-color: #f5f5f5; /* Set background color */
+            background-color: #f5f5f5;
         }
     </style>
-    
 </head>
-    
+
+<body>
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
+    <script>
+        window.botpressWebChat.init({
+            "botId": "6d7e99e8-ece4-47bd-a502-451b000126a9",
+            "clientId": "6d7e99e8-ece4-47bd-a502-451b000126a9",
+            "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
+            "messagingUrl": "https://messaging.botpress.cloud",
+            "botName": "Tech Tutor Educational AI Bot",
+            "containerWidth": "100%25",
+            "layoutWidth": "100%25",
+            "hideWidget": true,
+            "disableAnimations": true,
+        });
+
+        window.botpressWebChat.onEvent(
+            function () {
+                window.botpressWebChat.sendEvent({ type: "show" });
+            },
+            ["LIFECYCLE.LOADED"]
+        );
+    </script>
+</body>
+
 </html>
