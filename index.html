@@ -18,7 +18,7 @@
         }
 
         .center-div {
-            width: 100%; /* Adjusted to take full width */
+            width: 100vw; /* Updated to take full viewport width */
             height: 100vh;
             background-color: rgb(102, 71, 255);
             border-radius: 15px;
@@ -33,8 +33,7 @@
 
         @media only screen and (max-width: 600px) {
             .center-div {
-                height: 40vh;
-                width: 80vw;
+                height: 100vh; /* Adjusted to take full viewport height on mobile */
             }
         }
     </style>
@@ -65,9 +64,8 @@
                   'showConversationsButton': false,
                   'enableTranscriptDownload': false,
                   'stylesheet':'https://webchat-styler-css.botpress.app/prod/code/3de8d084-7ecf-4fbe-911f-4c2e93d92e1f/v2690/style.css'
-                  
               });
-            window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
+              window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
             </script></body>"
             width="100%"
             height="100%"
