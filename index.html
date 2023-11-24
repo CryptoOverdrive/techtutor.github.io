@@ -18,7 +18,8 @@
         }
 
         .center-div {
-            width: 100vw; /* Updated to take full viewport width */
+            width: 100%; /* Take full width */
+            max-width: 1200px; /* Set a maximum width to avoid stretching on larger screens */
             height: 100vh;
             background-color: rgb(102, 71, 255);
             border-radius: 15px;
@@ -33,7 +34,7 @@
 
         @media only screen and (max-width: 600px) {
             .center-div {
-                height: 100vh; /* Adjusted to take full viewport height on mobile */
+                height: 100vh; /* Take full height on mobile */
             }
         }
     </style>
