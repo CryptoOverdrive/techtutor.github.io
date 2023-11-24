@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-
+    
+<head>
 <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
 <script>
     window.botpressWebChat.init({
@@ -12,10 +13,10 @@
         "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
         "messagingUrl": "https://messaging.botpress.cloud",
  
-        // Set the name of the bot that will be displayed in the WebChat interface
+        // Setting the name of the bot that will be displayed in the WebChat interface
         "botName": "Tech Tutor Educational AI Bot",
  
-        // Set the width of the WebChat container and layout to 100% (Full Screen)
+        // Setting the width of the WebChat container and layout to 100% (Full Screen)
         "containerWidth": "100%25",
         "layoutWidth": "100%25",
  
@@ -24,8 +25,8 @@
         "disableAnimations": true,
     });
  
-    // Opens up the Chatbot by default
-    // This lets users start chatting with the Chatbot without needing to click any buttons or menus.
+    // Open up the Chatbot by default
+    // This lets user start chatting with the Chatbot without needing to click any buttons or menus.
     window.botpressWebChat.onEvent(
         function () {
             window.botpressWebChat.sendEvent({ type: "show" });
@@ -33,13 +34,13 @@
         ["LIFECYCLE.LOADED"]
     );
 </script>
+    
      <style>
         body {
             background-color: #f5f5f5; /* Set background color */
-            color: #333; /* Set text color */
-            font-family: 'Arial', sans-serif; /* Set font family */
         }
-        /* Add more styles as needed */
     </style>
-
+    
+</head>
+    
 </html>
